@@ -16,27 +16,34 @@
 ## Structure du projet
 
 ### Activités principales
-1. **ListPizzaActivity** : 
+1. **SplashActivity** :
+-une activité de démarrage avec une animation appliquée sur une 
+image (logo de votre application). 
+2. **ListPizzaActivity** : 
    - Gère l'affichage de la liste des pizzas sous forme de `RecyclerView`.
    - Chaque élément de la liste affiche le nom, l'image et une description succincte de la recette.
 
-2. **PizzaRecipeActivity** :
+3. **PizzaRecipeActivity** :
    - Affiche les détails d'une recette spécifique sélectionnée par l'utilisateur.
    - Les détails incluent l'image, les ingrédients et les instructions pour la préparation.
    - Un bouton "Partager" permet à l'utilisateur de partager la recette via d'autres applications.
 
 ### XML pour l'interface graphique
 
-- **activity_main.xml** : Fichier de mise en page pour la `MainActivity` affichant la liste des pizzas.
+-**activity_splash.xml** : Fichier de mise en page pour la 'ListPizzaActivity' pour afficher une animation de démarage de l'application.
+- **activity_list_pizza.xml** : Fichier de mise en page pour la `MainActivity` affichant la liste des pizzas.
   - Utilisation d'un `RecyclerView` pour afficher les pizzas.
   
 - **activity_pizza_recipe.xml** : Fichier de mise en page pour l'activité des détails de la pizza.
   - Utilise des `TextView` et `ImageView` pour afficher les informations détaillées de la recette.
   - Un bouton de partage est inclus pour partager les informations via d'autres applications.
+-**item.xml** : Fichier de mise en page des éléments de la liste des pizzas.
+-**header.xml** : Fichier de mise en page de l'entete de l'application.  
 
 ## Logique Java
-
-1. **MainActivity.java** :
+1.**SplashActivity** :
+   -Afficher une activité animée pour certains temps pour monter le démarage de l'application.
+1. **ListPizzaActivity.java** :
    - Charge la liste des recettes de pizza et les affiche dans un `RecyclerView`.
    - Gère la navigation vers l'activité des détails d'une recette via une `Intent` en transmettant les informations nécessaires.
 
