@@ -16,7 +16,7 @@
 ## Structure du projet
 
 ### Activités principales
-1. **MainActivity** : 
+1. **ListPizzaActivity** : 
    - Gère l'affichage de la liste des pizzas sous forme de `RecyclerView`.
    - Chaque élément de la liste affiche le nom, l'image et une description succincte de la recette.
 
